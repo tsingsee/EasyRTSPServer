@@ -1,15 +1,8 @@
 # EasyRTSPServer
 
-EasyRTSPServer是一款是由[**TSINGSEE青犀开放平台**](http://open.tsingsee.com "TSINGSEE")团队开发和迭代的非常稳定、易用、支持多种平台（包括Windows/Linux 32&64，Android，iOS，ARM等平台）的RTSP Server组件，适用于IPCamera、NVR、编码器、安卓监控设备等软硬件产品，接口调用非常简单成熟，调用者无需关注RTSP Server中关于客户端监听接入、音视频多路复用、RTSP具体流程、RTP打包与发送等相关问题，支持多种音视频格式，再也不用像调用其他RTSPServer那样处理整个RTSP OPTIONS/DESCRIBE/SETUP/PLAY/RTP/RTCP的复杂流程和担心内存释放的问题了！EasyRTSPServer非常适合于安防领域、教育领域、互联网直播等领域；
+EasyRTSPServer是一款是由[**TSINGSEE青犀开放平台**](http://open.tsingsee.com "TSINGSEE")团队开发和迭代的非常稳定、易用、支持多种平台（包括Windows/Linux 32&64，Android，iOS，ARM等平台）的RTSP Server组件，适用于IPCamera、NVR、编码器、安卓监控设备等软硬件产品，接口调用非常简单成熟，调用者无需关注RTSP Server中关于客户端监听接入、音视频多路复用、RTSP具体流程、RTP打包与发送等相关问题，支持多种音视频格式，再也不用像调用其他RTSPServer那样处理整个RTSP OPTIONS/DESCRIBE/SETUP/PLAY/RTP/RTCP的复杂流程和担心内存管理的问题了！EasyRTSPServer非常适合于安防领域、教育领域、互联网直播等领域；
 
-BTW：EasyRTSPServer非常适合在海思系列芯片上运行，性能以及稳定性都非常优秀，并发方面，稳定保持在20路1080P并发：
-
- - TCP/UDP 方式分别连接20路下，1080P 4M 定码率，音频格式G711（64K）G726（16K 24K 32K 40K）AAC(64K 96K 128K)都没问题；
- 
- - 支持Basic、Digest两种鉴权模式；
-
-
-## 功能支持 ##
+## 功能支持
 
 - [x] 标准、稳定运行的RTSP/RTP服务；
 - [x] 支持RTP over UDP/RTP over TCP；
@@ -19,7 +12,7 @@ BTW：EasyRTSPServer非常适合在海思系列芯片上运行，性能以及稳
 - [x] 灵活的SDK调用接口支持;
 - [x] 丰富的SDK接口调用示例;
 
-## 调用示例 ##
+## 调用示例
 
 - **EasyRTSPServer**：在不同的调用平台上，我们实现了不同的调用示例；
 	1. Android：采集Android摄像头（支持前/后摄像头切换）和麦克风声音作为数据源的安卓RTSPServer；
@@ -34,7 +27,6 @@ BTW：EasyRTSPServer非常适合在海思系列芯片上运行，性能以及稳
 
 		chmod +x ./Buildit
 		./Buildit
-
 
 	<table>
 	<tr><td><b>支持平台</b></td><td><b>芯片</b></td><td><b>目录位置</b></td></tr>
@@ -100,3 +92,4 @@ EASY\_SDK\_AUDIO\_FRAME\_FLAG数据可支持多种音频格式：
 
 © TSINGSEE Team：<a href="http://www.tsingsee.com" target="_blank" title="青犀TSINGSEE">http://www.tsingsee.com</a><br/>
 ![青犀TSINGSEE](https://imgconvert.csdnimg.cn/aHR0cDovL3d3dy5lYXN5ZGFyd2luLm9yZy9wdWJsaWMvaW1hZ2VzL3RzaW5nc2VlX3FyY29kZV8xNjAuanBn?x-oss-process=image/format,png)
+
